@@ -2,7 +2,7 @@ version: "3"
 
 services:
   namenode:
-    image: bde2020/hadoop-namenode:master
+    image: wanghongxing/hadoop-namenode:323
     container_name: namenode
     restart: always
     ports:
@@ -16,7 +16,7 @@ services:
       - ./hadoop.env
 
   datanode:
-    image: bde2020/hadoop-datanode:master
+    image: wanghongxing/hadoop-datanode:323
     container_name: datanode
     restart: always
     volumes:
@@ -27,7 +27,7 @@ services:
       - ./hadoop.env
   
   resourcemanager:
-    image: bde2020/hadoop-resourcemanager:master
+    image: wanghongxing/hadoop-resourcemanager:323
     container_name: resourcemanager
     restart: always
     environment:
@@ -36,7 +36,7 @@ services:
       - ./hadoop.env
 
   nodemanager1:
-    image: bde2020/hadoop-nodemanager:master
+    image: wanghongxing/hadoop-nodemanager:323
     container_name: nodemanager
     restart: always
     environment:
@@ -45,7 +45,7 @@ services:
       - ./hadoop.env
   
   historyserver:
-    image: bde2020/hadoop-historyserver:master
+    image: wanghongxing/hadoop-historyserver:323
     container_name: historyserver
     restart: always
     environment:
@@ -56,7 +56,7 @@ services:
       - ./hadoop.env
   
   tools:
-    image: bde2020/hadoop-base:master
+    image: wanghongxing/hadoop-base:323
     container_name: tools
     restart: always
     environment:
