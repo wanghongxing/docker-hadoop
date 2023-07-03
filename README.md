@@ -1,3 +1,15 @@
+forked from https://github.com/big-data-europe/docker-hadoop
+
+因为我自己的 macbook 是m2 芯片，无法使用amd64的image，所以我修改了这个镜像，让支持 arm64.
+原作者的 Dockerfile是从debian 来做，安装arm64版jdk比较麻烦，我改成 openjdk11,这样就把 jdk 安装部分代码去掉了，顺便把hardoop升级到3.2.3 。
+
+# build docker 
+
+```
+make build
+docker-compose up -d
+```
+
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/big-data-europe/Lobby)
 
 # Changes

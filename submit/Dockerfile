@@ -1,4 +1,4 @@
-FROM bde2020/hadoop-base:whx
+FROM bde2020/hadoop-base:master
 
 MAINTAINER Ivan Ermilov <ivan.s.ermilov@gmail.com>
 
